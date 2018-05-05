@@ -8,6 +8,7 @@
     <meta name="author" content="">
 
     <link rel="shortcut icon" href="graphics/favicon.ico">
+    <link href="http://vjs.zencdn.net/6.6.3/video-js.css" rel="stylesheet">
 
     <title>Tervetuloa ikäihmisten palvelulinjalle!</title>
 
@@ -126,7 +127,16 @@
       </div>
 
       <div class="grid-container fluid page anchor katso" id="katso">
-        <iframe src="https://www.youtube.com/embed/nmjAGsdv2-g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <video id="my-video" class="video-js" controls preload="auto"
+          poster="graphics/cot_poster.jpg" data-setup="{}">
+            <source src="https://memocate.ams3.digitaloceanspaces.com/CoT/Cot_Online_1.0.mp4" type='video/mp4'>
+            <p class="vjs-no-js">
+              To view this video please enable JavaScript, and consider upgrading to a web browser that
+              <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+            </p>
+          </video>
+          <script src="http://vjs.zencdn.net/6.6.3/video.js"></script>
+
       </div>
 
       <div class="grid-container fluid page anchor toimi" id="toimi">
