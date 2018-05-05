@@ -6,49 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <!-- ****** faviconit.com favicons ****** -->
+
     <link rel="shortcut icon" href="{{rootPath}}graphics/favicon.ico">
-    <link rel="icon" sizes="16x16 32x32 64x64" href="{{rootPath}}graphics/favicon.ico">
-    <link rel="icon" type="image/png" sizes="196x196" href="{{rootPath}}graphics/favicon-192.png">
-    <link rel="icon" type="image/png" sizes="160x160" href="{{rootPath}}graphics/favicon-160.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="{{rootPath}}graphics/favicon-96.png">
-    <link rel="icon" type="image/png" sizes="64x64" href="{{rootPath}}graphics/favicon-64.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{rootPath}}graphics/favicon-32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{rootPath}}graphics/favicon-16.png">
-    <link rel="apple-touch-icon" href="{{rootPath}}graphics/favicon-57.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="{{rootPath}}graphics/favicon-114.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="{{rootPath}}graphics/favicon-72.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="{{rootPath}}graphics/favicon-144.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="{{rootPath}}graphics/favicon-60.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="{{rootPath}}graphics/favicon-120.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="{{rootPath}}graphics/favicon-76.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="{{rootPath}}graphics/favicon-152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="{{rootPath}}graphics/favicon-180.png">
-    <meta name="msapplication-TileColor" content="#FFFFFF">
-    <meta name="msapplication-TileImage" content="{{rootPath}}graphics/favicon-144.png">
-    <meta name="msapplication-config" content="/browserconfig.xml">
-    <!-- ****** faviconit.com favicons ****** -->
-    <title>Memocate - Aid for Dementia</title>
+
+    <title>CoT</title>
 
     <!-- Theme CSS -->
     <link href="{{rootPath}}css/styles.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:900" rel="stylesheet"> 
 
     <!-- Global Site Tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107698216-1"></script>
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107698216-1"></script> -->
 
     <!-- Start of HubSpot Embed Code -->
-    <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/2730699.js"></script>
+    <!-- <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/2730699.js"></script> -->
     <!-- End of HubSpot Embed Code -->
   </head>
 
   <body id="{{page-top-anchor}}" class="index">
-    <nav class="top-bar">
+    <div class="top-bar">
       <div class="top-bar-left">
         <a class="large-offset-1" href="#{{page-top-anchor}}">
-          <img class="logo" src="{{rootPath}}graphics/logo-memocate.svg" />
+          <img class="logo" src="{{rootPath}}graphics/logo_cot_primary.png" />
         </a>
         <span class="mobile-toggle show-for-small-only">
           <svg
@@ -120,230 +101,78 @@
       </div>
       <div id="main-menu" class="top-bar-right show-for-medium">
         <ul class="vertical medium-horizontal menu">
-          <li><a href="#{{our-story-anchor}}" class="top-bar-link">{{our-story}}</a></li>
-          <li><a href="#{{service-anchor}}" class="top-bar-link">{{service-heading}}</a></li>
-          <li><a href="#{{research-anchor}}" class="top-bar-link">{{research-heading}}</a></li>
-          <li><a href="#{{team-anchor}}" class="top-bar-link">{{team-heading}}</a></li>
-          <li><a href="#{{get-in-touch-anchor}}" class="top-bar-link">{{get-in-touch-heading}}</a></li>
-          <li><a href="https://pilot.memocate.com/" class="top-bar-link top-bar-button">{{get-started-heading}}</a></li>
+          <li><a href="#{{aloita-anchor}}" class="top-bar-link">{{aloita}}</a></li>
+          <li><a href="#{{katso-anchor}}" class="top-bar-link">{{katso-heading}}</a></li>
+          <li><a href="#{{toimi-anchor}}" class="top-bar-link">{{toimi-heading}}</a></li>
+          <li><a href="#{{get-in-touch-anchor}}" class="top-bar-link top-bar-link-inverted">{{get-in-touch-heading}}</a></li>
         </ul>
       </div>
-    </nav>
+    </div>
 
     <div class="page-content">
-      <div class="grid-container fluid ">
-        <div id="{{page-top-anchor}}" class="grid-x anchor">
-          <div class="medium-offset-1 large-offset-3 large-14 intro">
+      <div class="grid-container fluid aloita">
+        <div class="grid-x anchor">
+          <div class="medium-offset-1 large-offset-2 large-11 medium-11 intro">
             <div>
               {{{intro}}}
+              <p><a class="katso-link" href="#{{katso-anchor}}">{{katso-heading}}</a></p>
             </div>
           </div>
         </div>
 
         <div class="grid-container fluid home_m">
-          <div class="large-offset-11 large-10">
-            <img src="{{rootPath}}graphics/homepage_m.png"/>
-          </div>
-        </div>
-
-        {{> bottom-social }}
-      </div>
-
-      <div class="anchor" id="{{our-story-anchor}}"></div>
-      {{#each stories}}
-      <div
-        id="{{@root.our-story-anchor}}-{{plus @index 1}}"
-        class="grid-container fluid page anchor"
-      >
-        <div class="grid-x">
-          <div class="medium-offset-2 medium-17 our-story-container">
-            <div class="grid-x">
-              <div class="medium-11 our-story-headers">
-                <span class="our-story-line"></span>
-                <span class="our-story">{{@root.our-story}}</span>
-                <h1>{{{this.h1}}}</h1>
-              </div>
-              <div class="medium-9">
-                <img src="{{@root.rootPath}}graphics/{{this.img}}"/>
-              </div>
-            </div>
-            <div class="our-story-paragraphs">
-              <p class="our-story-side">{{this.p_1}}</p>
-              <p class="our-story-side">{{this.p_2}}</p>
-            </div>
-          </div>
-          <div class="large-1 ball-nav-container show-for-medium">
-            <div class="ball-container">
-              <a href="#{{@root.our-story-anchor}}-1" class="ball {{#eq @index 0}}ball-active{{/eq}}"></a>
-              <a href="#{{@root.our-story-anchor}}-2" class="ball {{#eq @index 1}}ball-active{{/eq}}"></a>
-              <a href="#{{@root.our-story-anchor}}-3" class="ball {{#eq @index 2}}ball-active{{/eq}}"></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      {{/each}}
-
-      <div class="grid-container fluid begin-section anchor" id="{{service-anchor}}">
-        <div class="grid-x">
-          <div class="medium-offset-2 medium-17">
-            <span class="our-story-line"></span>
-            <span class="our-story">{{service-heading}}</span>
-          </div>
-        </div>
-
-        <div class="grid-x">
-          <div class="medium-offset-2 medium-17 our-story-container">
-            <div class="grid-x">
-              <div class="medium-7 service">
-                <div class="service-center-icon">
-                  <img src="{{rootPath}}graphics/homepage_lightbulb.svg" style="width: 26%; margin-bottom: 52px;" />
-                </div>
-                <p>{{service.p_1}}</p>
-              </div>
-
-              <div class="medium-7 service">
-                <div class="service-center-icon">
-                  <img src="{{rootPath}}graphics/homepage_talk.svg" style="width: 37%;" />
-                </div>
-                <p>{{service.p_2}}</p>
-              </div>
-
-              <div class="medium-7 service">
-                <div class="service-center-icon">
-                  <img src="{{rootPath}}graphics/homepage_handshake.svg" style="width: 35%;" />
-                </div>
-                <p>{{service.p_3}}</p>
-              </div>
-            </div>
-          </div>
+          <img src="{{rootPath}}graphics/background_landing.png"/>
         </div>
       </div>
 
-      <div class="grid-container fluid begin-section anchor" id="{{research-anchor}}">
-        <div class="grid-x">
-          <div class="medium-offset-2 medium-17">
-            <span class="our-story-line"></span>
-            <span class="our-story">{{research-heading}}</span>
-            <div class="our-story-paragraphs">
-              <div class="our-story-side">{{{research.p_1}}}</div>
-              <div class="our-story-side">{{{research.p_2}}}</div>
-            </div>
-            <img src="{{rootPath}}graphics/homepage_research.jpg" class="research-img" />
-            <div class="research-refs-container">
-              <div class="our-story-paragraphs research-refs">
-                <div class="our-story-side">{{{research.refs_1}}}</div>
-                <div class="our-story-side">{{{research.refs_2}}}</div>
-                <span class="research-refs-gradient"></span>
-              </div>
-              <span class="research-refs-read-more"><a href="#" class="research-refs-read-more-button">{{read-more}}</a></span>
-            </div>
-
-          </div>
-        </div>
+      <div class="grid-container fluid page anchor katso" id="{{katso-anchor}}">
+        <iframe src="https://www.youtube.com/embed/nmjAGsdv2-g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
 
-      <div class="grid-container fluid begin-section anchor" id="{{team-anchor}}">
-        <div class="grid-x">
-          <div class="medium-offset-2 medium-17">
-            <span class="our-story-line"></span>
-            <span class="our-story">{{team-heading}}</span>
-          </div>
+      <div class="grid-container fluid page anchor toimi" id="{{toimi-anchor}}">
+        <div class="toimi-non-embed">
+          {{{toimi-questionnaire-text}}}
         </div>
+        <div class="typeform-widget" data-url="https://heikkiviitanen.typeform.com/to/dgTaCK" data-transparency="100" data-hide-headers=true data-hide-footer=true style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
 
-        <div class="grid-x">
-          <div class="medium-offset-2 medium-17">
-            <div class="contacts-card-row">
-              {{#each team}}
-              <div class="contacts-card-container">
-                <div class="contacts-card">
-                  <figure class="contacts-card-pic">
-                    <h4 class="contacts-card-header">{{this.first_name}}</h4>
-                    <img src="{{@root.rootPath}}img/{{this.picture}}"/>
-                  </figure>
-                  <figure class="contacts-card-detail">
-                    <div class="contacts-card-detail-contents">
-                      <h4 class="contacts-card-header">{{this.first_name}} <span class="light-text">{{this.last_name}}</span></h4>
-                      <p class="contacts-card-title">{{this.title}}</p>
-                      <p class="contacts-card-icon-line">
-                        <img class="contacts-card-icon" src="{{@root.rootPath}}graphics/homepage_icon_email.svg"/>
-                        <span> {{this.email}}</span>
-                      </p>
-                      {{#if this.phone}}
-                      <p class="contacts-card-icon-line">
-                        <img class="contacts-card-icon" src="{{@root.rootPath}}graphics/homepage_icon_phone.svg"/>
-                        <span> {{this.phone}}</span>
-                      </p>
-                      {{/if}}
-                    </div>
-                  </figure>
-                </div>
-              </div>
-              {{/each}}
-              {{!-- Round off last row --}}
-              {{#eq (modulo (length team) 3) 2}}
-              <div class="contacts-card-container"></div>
-              {{/eq}}
-              {{#eq (modulo (length team) 3) 1}}
-              <div class="contacts-card-container"></div>
-              <div class="contacts-card-container"></div>
-              {{/eq}}
-            </div>
-          </div>
+        <div class="toimi-non-embed heart">
+          <img src="{{rootPath}}graphics/icon_heart.png">
+          {{{toimi-feedback-text}}}
         </div>
+        <div class="typeform-widget" data-url="https://heikkiviitanen.typeform.com/to/tw9hKx" data-transparency="100" data-hide-headers=true data-hide-footer=true style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
       </div>
 
-      <div class="grid-container fluid page anchor" id="{{get-in-touch-anchor}}">
-        <div class="grid-x">
-          <div class="medium-offset-2 medium-17">
-            <span class="our-story-line"></span>
-            <span class="our-story">{{get-in-touch-heading}}</span>
-          </div>
-        </div>
-
-        <div class="grid-x">
-          <div class="medium-offset-2 medium-17">
-            <div class="in-touch-row">
-              <div class="in-touch">
-                <h3>{{email}}</h3>
-                <p>heikki@memocate.com</p>
+      <div class="grid-container fluid ota-yhteytta" id="{{get-in-touch-anchor}}">
+        <div class="grid-container fluid bottom-image contact-details">
+          <div class="grid-x">
+            <div class="medium-offset-9 medium-5">
+              <div class="contact-details-logo">
+                <img src="{{rootPath}}graphics/logo_cot_footer.png">
               </div>
-              <div class="in-touch">
-                <h3>{{phone}}</h3>
-                <p>+358 40 4893 848</p>
+              <p class="contact-details-title">{{cot-title}}</p>
+              <p><a href="mailto:{{cot-email}}">{{cot-email}}</a></p>
+            </div>
+            <div class="medium-offset-1 medium-5">
+              <div class="contact-details-logo contact-details-logo-memocate">
+                <img src="{{rootPath}}graphics/logo_memocate_footer.png">
               </div>
-              <div class="in-touch">
-                <h3>{{newsletter}}</h3>
-                <form action="//memocate.us14.list-manage.com/subscribe/post?u=253c161742142e0c269b089db&amp;id=6430315ec8" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
-                  <input name="EMAIL" type="text" placeholder="Your email" class="in-touch-input"/>
-                  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                  <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_253c161742142e0c269b089db_6430315ec8" tabindex="-1" value=""></div>
-                  <button type="submit" name="subscribe" class="in-touch-button">{{sign-me-up}}</button>
-                </form>
-              </div>
+              <p class="contact-details-title">{{memocate-title}}</p>
+              <p><a href="mailto:{{memocate-email}}">{{memocate-email}}</a></p>
             </div>
           </div>
         </div>
+        <div class="grid-container fluid bottom-image">
+          <img src="{{rootPath}}graphics/element_footer.png"/>
+        </div>
 
-        {{> bottom-social }}
       </div>
     </div> <!-- page content -->
 
-    <script type="text/javascript">
-     // flipping
-     var contactCards = document.querySelectorAll('.contacts-card')
-     ;[].forEach.call(contactCards, function(el) {
-       var timeoutId = null
-       el.addEventListener('mouseover', function () {
-         el.className += ' contacts-card-flipped'
-         clearTimeout(timeoutId)
-       })
-       el.addEventListener('mouseleave', function () {
-         timeoutId = setTimeout(function () {
-           el.className = el.className.replace(/ contacts-card-flipped/g, '')
-         }, 500)
-       })
-     })
+    <div class="nurse" id="nurse">
+      <img src="{{rootPath}}graphics/caregiver.png">
+    </div>
 
+    <script type="text/javascript">
      // mobile menu toggle
      var mainMenu = document.querySelector('#main-menu')
      function showMainMenu() { mainMenu.className = mainMenu.className.replace(/ show-for-medium/g, '') }
@@ -359,17 +188,6 @@
          hideMainMenu()
        })
      })
-
-     // show-more button
-     var showMoreButton = document.querySelector('.research-refs-read-more-button')
-     showMoreButton.addEventListener('click', function (ev) {
-       showMoreButton.classList.add('hidden')
-       document.querySelector('.research-refs-gradient').classList.add('hidden')
-       document.querySelector('.research-refs').classList.add('research-refs-expanded')
-       ev.preventDefault()
-       return false
-     })
-
 
     </script>
     <script type="text/javascript" src="{{rootPath}}bower_components/smoothscroll/dist/smoothscroll.js"></script>
@@ -416,6 +234,15 @@
              '',
              document.location.origin + document.location.pathname + '#' + elems[i].id)
 
+           if (elems[i].id !== '{{aloita-anchor}}'
+               && elems[i].id !== '{{katso-anchor}}'
+               && elems[i].id !== ''
+           ) {
+             document.getElementById('nurse').classList.add('show');
+           } else {
+             document.getElementById('nurse').classList.remove('show');
+           }
+
            ;[].forEach.call(topBarLinks, function(el) {
              if (el.href.indexOf(elems[i].id.replace(/-\d*$/, '')) !== -1) {
                el.classList.add('top-bar-link-active')
@@ -431,11 +258,11 @@
      init();
     </script>
 
-    <script type="text/javascript">
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-107698216-1');
-    </script>
+    <!-- <script type="text/javascript"> -->
+    <!-- window.dataLayer = window.dataLayer || []; -->
+    <!-- function gtag(){dataLayer.push(arguments);} -->
+    <!-- gtag('js', new Date()); -->
+    <!-- gtag('config', 'UA-107698216-1'); -->
+    <!-- </script> -->
   </body>
 </html>
