@@ -102,10 +102,11 @@ h1, h2 {
 
 h1 {
   @include breakpoint(large) {
-    font-size: 31px;
+    font-size: 34px;
   }
   line-height: 1;
   margin: 0;
+  margin-bottom: 24px;
 }
 
 .ball {
@@ -294,6 +295,7 @@ nav {
     }
     &-inverted {
       color: $white;
+      padding-right: 35px !important;
     }
   }
   &-button {
@@ -337,7 +339,11 @@ nav {
   }
   text-transform: uppercase;
   font-weight: 500;
-  font-size: 30px;
+  font-size: 18px;
+}
+.katso-arrow {
+  position: relative;
+  top: -11px;
 }
 
 .katso {
@@ -375,8 +381,8 @@ nav {
   display: none;
   position: fixed;
   bottom: 0;
-  left: 130px;
-  width: 25vw;
+  left: 3%;
+  width: 23vw;
   &.show {
     @include breakpoint(medium up) {
       display: initial;
