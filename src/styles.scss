@@ -387,7 +387,8 @@ nav {
   width: 23vw;
   &.show {
     @include breakpoint(medium up) {
-      display: initial;
+      /* Should be "initial" instead of "block", but IE */
+      display: block;
     }
   }
   -webkit-animation: slide-in-fwd-bottom 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
