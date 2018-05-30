@@ -348,10 +348,10 @@ nav {
 }
 
 .katso {
-  widt: 100vw;
+  width: 100vw;
   & >  {
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
   }
 }
 
@@ -495,6 +495,6 @@ nav {
 }
 
 .video-js {
-  height: 100vh;
+  height: 80vh;
   width: 100% !important;
 }
